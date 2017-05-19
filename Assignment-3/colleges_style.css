@@ -1,0 +1,56 @@
+/**********************************/
+/* CSS for colleges_page.html     */
+/* July 16, 2016                  */
+/*                                */
+/* Author: Ron Guglilmone         */
+/* School: Stanford University    */
+/* Class: CS193C                  */
+/* Assignment: 3                  */
+/**********************************/
+
+
+td {
+	padding: 10px 10px 10px 10px;
+}
+
+#cardContainerOne {
+	background-image: URL('back.png');
+	background-repeat: no-repeat;
+	width: 123px;
+	height: 179px;
+}
+
+#cardContainerTwo {
+	background-image: URL('back.png');
+	background-repeat: no-repeat;
+	width: 123px;
+	height: 179px;
+}
+
+#cardContainerThree {
+	background-image: URL('back.png');
+	background-repeat: no-repeat;
+	width: 123px;
+	height: 179px;
+}
+
+#cardContainerFour {
+	background-image: URL('back.png');
+	background-repeat: no-repeat;
+	width: 123px;
+	height: 179px;
+}
+
+#cardContainerFive {
+	background-image: URL('back.png');
+	background-repeat: no-repeat;
+	width: 123px;
+	height: 179px;
+}
+
+#cardContainerSix {
+	background-image: URL('back.png');
+	background-repeat: no-repeat;
+	width: 123px;
+	height: 179px;
+}
