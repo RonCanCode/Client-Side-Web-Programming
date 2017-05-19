@@ -3,7 +3,7 @@
 Simple web programming exercises using JavaScript, AJAX, jQuery, 
 HTML, CSS, and more.  Completed for CS193 at Stanford University 
 in the summer of 2016.  The links below are for hosted versions of   
-some of the assignments in this repository.
+some of the assignments in this repository.  
 
 INTERACTIVE STANFORD CAMPUS MAP  
 http://ronnieday.com/CS193/assignment-4/map.html
