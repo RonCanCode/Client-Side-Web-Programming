@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stanford Connection</title>
+  <style>
+
+    #main {
+      max-width: 820px;
+      min-width: 820px;
+      margin-left: auto;
+      margin-right: auto;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+    }
+
+    #leftMain {
+      display: -webkit-flex;
+      display: flex;
+      width: 600px;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+
+    #rightMain {
+      display: -webkit-flex;
+      display: flex;
+      width: 200px;
+      padding: 0px 10px 10px 10px;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+
+    #header {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      width: 600px;
+      height: 75px;
+      background-color: #9A0000;
+    }
+
+    #body {
+      display: -webkit-flex;
+      display: flex;
+      width: 600px;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      
+    }
+
+    #profileSection {
+      display: -webkit-flex;
+      display: flex;
+      padding: 10px 10px 10px 10px;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      width: 200px;
+      font-size: 11pt;
+
+    }
+
+    #updateSection {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      width: 400px;
+      padding: 10px 10px 10px 10px;
+    }
+
+    #header {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #siteName {
+      color: white;
+      font-size: 32pt;
+      margin-left: 10px;
+
+    }
+
+    #stanfordLogo { 
+      margin-left: auto;
+    }
+
+    #logo {
+      width: 70px;
+      height: 70px;
+    }
+
+    #mollyPhoto {
+      padding-bottom: 5px;
+    }
+
+    .sectionTitles {
+      border-top: solid;
+      border-bottom: solid;
+      border-width: 2px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      background-color: #CC9191;
+      font-family: sans-serif;
+    }
+
+    .sectionTitlesForm {
+      border-top: solid;
+      border-bottom: solid;
+      border-width: 2px;
+      margin-bottom: 5px;
+      margin-top: 0px;
+      background-color: #CC9191;
+      font-family: sans-serif;
+    }
+
+    .statusEntry {
+      border-top: solid;
+      border-bottom: solid;
+      border-width: 2px;
+      border-width: 2px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-family: sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="main">
+   
+    <div id="leftMain">
+      <div id="header">
+        <div id="siteName">Stanford Connection</div>
+        <div id="stanfordLogo"><img src="tree-logo.gif" alt="Stanford Logo" id="logo"></div>
+      </div>
+      <div id="body">
+        <div id="profileSection">
+          <img src="molly.jpg" id="mollyPhoto" alt="Dog Photo">
+          <div class="sectionTitles">About Me</div>
+          <div class="aboutContent">
+            <b>Birthday:</b> December 8, 2001<br>
+            <b>Gender:</b> Female<br>
+          </div>
+          <div class="sectionTitles">Friends</div>
+          <div class="aboutContent">
+            <b>Patrick Young</b><br>
+            <b>Chloe Cox</b><br>
+          </div>
+        </div>
+        <div id="updateSection">
+          <h2>Molly the FloPup</h2>
+          <div class="sectionTitles">Status Updates</div>
+          <div class="statusEntry">When am I going to get food?</div>
+          <div class="statusEntry">I want to go for a walk</div>
+          <div class="statusEntry">There's a squirrel on the patio.</div>
+          <div class="statusEntry">I really like summer.</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="rightMain">
+      <div id="formTitle">
+        <div class="sectionTitlesForm">Post Updates</div>
+      </div>
+      <div id="formContent">
+        <form action="postStatus.asp" id="userStatus" method="post">
+          <textarea rows="4" cols="24" name="statusUpdate">
+Enter a new status...</textarea>
+            <br>
+            <input type="submit" value="Submit New Update">
+          </form>
+          <br>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+  </html>

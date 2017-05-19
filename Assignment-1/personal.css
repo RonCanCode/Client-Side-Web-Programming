@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Sans-Serif;
+	}  
+
+h1 {
+	text-align: center;
+}
+
+a:link {
+    color: rgb(38, 77, 115);
+}
+
+a:visited {
+    color: rgb(64, 128, 191);
+}
+
+a:hover {
+    color: rgb(180, 205, 228);
+}
+
+a:active {
+    color: rgb(41, 78, 112);
+}
+
+ul { 
+	overflow: hidden; 
+}
+
+#personalPhoto {
+	float: left;
+	width: 225px;
+	height: 225px;
+	padding: 10px 10px 10px 10px;
+	margin: 20px 20px 20px 20px;
+	border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+}
+
+#aboutMeText {
+	margin: 20px 20px 20px 10px;
+	padding: 20px 20px 20px 10px;
+    font-size: 14pt;
+}
+
+.furd {
+	color: rgb(130,0,0);
+	font-weight: bold;
+}
