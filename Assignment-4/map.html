@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!-- ............................. -->
+<!-- Maps                          -->
+<!--                               -->
+<!-- July 29, 2016                 -->
+<!--                               -->
+<!-- Author: Ron Guglilmone        -->
+<!-- School: Stanford University   -->
+<!-- Class: CS193C                 -->
+<!-- Assignment: 4                 -->
+<!-- ............................. -->
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Stanford Map</title>
+	<link href="map_style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload="mainFunction()">
+	<div id="main">
+		<div id="mapFrame">
+			<div id='mapImage' style="position: absolute; left: 0px; top: 0px; width: 2047px; height: 1589px;"></div>
+		</div>
+		<div id="controlPanel">
+			<div id="zoomControls">
+			<table>
+			<tr><td><img src="images/topZoomer.png" id="topZoomer" alt="navigationImage" /></td></tr>
+			<tr><td><img src="images/bottomZoomer.png" id="bottomZoomer" alt="navigationImage" /></td></tr>
+			</table>
+			</div>
+			<div id="moverArrows">
+				<table>
+					<tr>
+						<td colspan="2"><img src="images/topMover.png" id="topMover" alt="navigationImage"/></td>
+					</tr>
+					<tr>
+						<td><img src="images/leftMover.png" id="leftMover" alt="navigationImage"/></td>
+						<td><img src="images/rightMover.png" id="rightMover" alt="navigationImage"/></td>
+					</tr>
+					<tr>
+						<td colspan="2"><img src="images/bottomMover.png" id="bottomMover" alt="navigationImage"/></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="map_script.js"></script>
+</body>
+</html>
