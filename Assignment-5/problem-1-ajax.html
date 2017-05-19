@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!-- ............................. -->
+<!-- Ajax                          -->
+<!--                               -->
+<!-- August 8, 2016                -->
+<!--                               -->
+<!-- Author: Ron Guglilmone        -->
+<!-- School: Stanford University   -->
+<!-- Class: CS193C                 -->
+<!-- Assignment: 5                 -->
+<!-- ............................. -->
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Open Weather via AJAX</title>
+	<link href="problem-1-ajax_style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload="mainFunction()">
+	<div id="main">
+		<div id="title">Open Weather via AJAX</div>
+		<div id="entry">Enter ZIP Code:&nbsp;&nbsp;
+		<form id="weatherForm" onsubmit="return false;">
+		<input type="text" id="zipCode" value="" size="10">&nbsp;&nbsp;
+		<input type="submit" value="Get Weather" id="weatherSubmit" onclick="getTheWeather()">
+		<input type="submit" value="Clear" id="weatherClear" onclick="clearTheText()">
+		</form>
+		</div>
+		<div id="results">
+		<textarea rows="16" cols="60" id="weatherResultsBox"></textarea>
+		</div>
+		</div>
+		<script type="text/javascript" src="problem-1-ajax_script.js"></script>
+	</body>
+	</html>
