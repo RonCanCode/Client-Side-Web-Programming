@@ -1,0 +1,62 @@
+<!-- ............................. -->
+<!-- College Search                -->
+<!--                               -->
+<!-- July 16, 2016                 -->
+<!--                               -->
+<!-- Author: Ron Guglilmone        -->
+<!-- School: Stanford University   -->
+<!-- Class: CS193C                 -->
+<!-- Assignment: 3                 -->
+<!-- ............................. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Bay Area Colleges and Universities</title>
+	<link href="colleges_style.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="colleges_script.js"></script>
+</head>
+<body>
+
+	<div id="main">
+		<div id="titleSection">
+			Bay Area Colleges and Universities
+		</div>
+
+		<div id="pageContent">
+			<div id="tableSection">
+				<div id="testTable">
+	</div>
+			</div>
+
+			<div id="searchSection">
+			<form id="searchInformation" action="">
+				<table id="searchTable">
+					<tr>
+						<td class="tableTitleName" colspan="2">Search Criteria</td>
+					</tr>
+					<tr>
+						<td class="contentTD" colspan="2"><input type="radio" name="schoolType" value="publicSchool" checked> Public <input type="radio" name="schoolType" value="privateSchool"> Private <input type="radio" name="schoolType" value="eitherSchool"> Don't Care</td>
+					</tr>
+					<tr>
+						<td class="contentTD">Maximum Tuition</td>
+						<td class="contentTD"><input type="text" name="maxTuition" size="12"></td>
+					</tr>
+					<tr>
+						<td class="contentTD">Maximum High SAT</td>
+						<td class="contentTD"> <input type="text" name="maxSAT" size="12"></td>
+					</tr>
+					<tr>
+						<td class="contentTD">Maximum Low SAT</td>
+						<td class="contentTD"><input type="text" name="minSAT" size="12"></td>
+					</tr>
+				</table>
+				<input type="button" value="Update" onclick="buildTable()">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
