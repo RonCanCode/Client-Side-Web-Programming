@@ -1,0 +1,49 @@
+/**********************************/
+/* CSS for gallery.html           */
+/* July 28, 2016                  */
+/*                                */
+/* Author: Ron Guglilmone         */
+/* School: Stanford University    */
+/* Class: CS193C                  */
+/* Assignment: 4                  */
+/*                                */
+/**********************************/
+
+
+#photoSection {
+	width: 800px;
+	height: 600px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#caption {
+	width: 780px;
+	padding: 10px;
+	color: white;
+	font-size: 14pt;
+	font-family: sans-serif;
+	background-color: #008800;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 0px;
+}
+
+#forwardOverlay {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 400px;
+	height: 600px;
+}
+
+#backwardOverlay {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 400px;
+	height: 600px;
+}
