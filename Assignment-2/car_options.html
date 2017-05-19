@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Configure Your GT Super Sportscar</title>
+	<script type="text/javascript" src="car_form_calculations.js"></script>
+	<link rel="stylesheet" type="text/css" href="car_stylesheet.css">
+</head>
+<body>
+
+	<div id="main">
+
+		<div id="header">
+			<h1>Configure Your GT Super Sportscar</h1>
+		</div>
+
+		<div id="content">
+
+			<div id="leftMain">
+
+				<form id="carForm" onsubmit="return false">
+
+					<div class="optionBox">
+						<div class="optionHeading">
+							Configuration
+						</div>
+						<div class="optionContent">
+							<div class="leftSide">
+								<fieldset>
+									<input name="selectedConfiguration" type="radio" value="manual" checked="checked" />
+									<label>GT Manual</label>
+									<br>
+									<input name="selectedConfiguration" type="radio" value="automatic"/>
+									<label>GT Automatic</label>
+									<br>
+									<input name="selectedConfiguration" type="radio" value="sManual" />
+									<label>GT-S Manual</label>  
+									<br>
+									<input name="selectedConfiguration" type="radio" value="sSportshift" />
+									<label>GT-S Sportshift</label>
+								</fieldset>
+							</div>
+							<div class="rightSide">
+								$17,790<br>
+								$18,590<br>
+								$22,455<br>
+								$23,155<br>
+							</div>
+						</div>
+					</div>
+
+					<div class="optionBox">
+						<div class="optionHeading">
+							Factory Options
+						</div>
+						<div class="optionContent">
+							<div class="leftSide">
+								<fieldset>
+									<input name="selectedCombo" type="radio" value="comboOne"/>
+									<label>Option Combo #1</label>
+									<br>
+									<div class="factoryOptionsText">
+										<ul>
+											<li>Power Windows, Doors, Cruise Control</li>
+										</ul>
+									</div>
+									<input name="selectedCombo" type="radio" value="comboTwo"/>
+									<label>Option Combo #2</label>
+									<br>
+									<div class="factoryOptionsText">
+										<ul>
+											<li>Rear Spoiler and Fog Lamps</li>
+											<li>Keyless Entry</li>
+											<li>Power Tilt & Slide Moonroof</li>
+											<li>Power Windows, Doors, Cruise Control</li>
+										</ul>
+									</div>
+									<input name="selectedCombo" type="radio" value="noCombo" checked="checked" />
+									<label>No Combo</label>  
+								</fieldset>
+							</div>
+
+							<div class="rightSide">
+								$1235<br>
+								<div class="factoryOptionsText">
+									<br>
+								</div>
+								$3354<br>
+								<div class="factoryOptionsText">
+									<br>
+									<br>
+									<br>
+									<br>
+								</div>
+								$0<br>
+							</div>
+						</div>
+					</div>
+
+					<div class="optionBox">
+						<div class="optionHeading">
+							Dealer Options
+						</div>
+						<div class="optionContent">
+							<div class="leftSide">
+								<fieldset>
+									<input name="upgradedStereo" id="upgradedStereo" type="checkbox" /> 
+									<label for="upgradedStereo">Upgraded Stereo System</label><br>
+									<input name="vipSecurity" id="vipSecurity" type="checkbox" />
+									<label for="vipSecurity">VIP Security System</label><br>
+									<input name="autoDimmer" id="autoDimmer" type="checkbox" />
+									<label for="autoDimmer">Auto-Dimming Mirror</label><br>
+								</fieldset>
+							</div>
+							<div class="rightSide">
+								$550<br>
+								$399<br>
+								$295<br>
+							</div>
+						</div>
+					</div>
+
+					<div class="optionBox">
+						<div class="optionHeading">
+							Total Price
+						</div>
+						<div class="optionContent">
+
+							<div class="leftSide">
+								<input id="totalPrice" type="text" size="25" /> 
+							</div>
+
+							<div class="rightSide">
+								<input type="submit" id="submit" value="Calculate Total" onclick="getTotal()" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div id="rightMain">
+
+				<div class="optionBox">
+					<div class="optionHeading">
+						Choose A Color
+					</div>
+
+					<div class="optionContent">
+
+						<div class="bottomLeftSide">
+							<select name="colorChoices" id="colorChoices">
+								<option value="red">Red</option>
+								<option value="blue">Blue</option>
+								<option value="silver">Silver</option>
+								<option value="white">White</option>
+								<option value="black">Black</option>
+							</select>
+						</div>
+						
+						<div class="bottomRightSide">
+							<img src="red.jpg" alt="Car Photo" id="carPhoto">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+			// Change car color:
+
+			var changeCarImage = function () { 
+				document.getElementById('carPhoto').src = this.options[this.selectedIndex].value + ".jpg"
+			}
+
+			var carList = document.getElementById('colorChoices');
+			carList.addEventListener('change', changeCarImage, false);
+		</script>
+
+	</body>
+	</html>
